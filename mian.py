@@ -1,6 +1,6 @@
 import sqlite3
 
-connect = sqlite3.connect("workers.db")
+connect = sqlite3.connect("words.db")
 
 cursor = connect.cursor()
 
@@ -13,9 +13,10 @@ cursor = connect.cursor()
 #          SALARY         REAL);
 #          ''')
 
-connect.execute("INSERT INTO INFO (ID,NAME,AGE,ADDRESS,SALARY) \
-VALUES (2, 'Jhone', 35, 'Texas', 10000.00 )");
+Uzbek = input("UZ: ")
+Russian = input("RU: ")
+English = input("ENG: ")
 
-connect.commit()
-print("Done!")
+connect.execute(f"INSERT INTO words_list (Uzbek,Russian,English) VALUES ('{Uzbek}','{Russian}','{English}');")
+
 connect.close()
