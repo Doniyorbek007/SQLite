@@ -1,0 +1,24 @@
+Barcha dasturlash tillari ma'lumotlar bazasi bilan ishlaydi.
+Ma'lumotlar bazalari 2 turga bo'linadi:
+    SQL(Structured Query Language) va NoSQL
+
+SQL ma'lumotlar bazasiga quyidagilar kiradi:
+    SQLite, MySQL, PostgreSQL, Microsoft SQL Server
+
+NoSQL :
+    MongoDB, Redis 
+
+Yengil ishlaydigan ma'lumotlar bazasi SQLite.
+ 
+Ular kichik web site / mobile dasturlarda ishlatilishi mumkin.
+
+SQLite ma'lumotlar bazasini CLI ishlatishimiz uchun quyidagi kommandalar kerak:
+    
+    1. sqlite3 CLI da ishga tushiradi.
+    
+    2. sqlite3 db_name.db ma'lum bir ma'lumotlar bazasini aktivlashtiradi. Agar bunday ma'lumotlar bazasi bo'lmasa uni yaratadi.
+    
+    3. .databases aktivlashgan ma'lumotlar bazasini ko'rsatadi.
+
+    4. .exit / .quit aktivlashgan jarayonni to'xtatadi.
+
